@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -a | sed -E -e '/^\.$|^\.\.$/s/$/,/' -e '/^\.$/d' -e '/^\.\.$/i\\' -e 's/^[0-9]/&\n/' | LC_ALL=C sort | tr '\n' ','; echo
