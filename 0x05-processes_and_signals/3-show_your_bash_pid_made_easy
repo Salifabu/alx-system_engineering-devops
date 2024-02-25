@@ -2,5 +2,5 @@
 # Shows the PID along with the process name, of 
 #+ processes whose name contains the word "bash".
 
-pgrep bash –l
+pids=$(pgrep -f bash)
 
