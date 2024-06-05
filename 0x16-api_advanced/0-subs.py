@@ -2,8 +2,8 @@
 """
 Script that queries subscribers on a given Reddit subreddit.
 """
-
 import requests
+
 
 def number_of_subscribers(subreddit):
     """Return the total number of subscribers for a given subreddit."""
@@ -19,10 +19,3 @@ def number_of_subscribers(subreddit):
     except requests.exceptions.RequestException as e:
         print(f"Error: {e}")
         return 0
-
-# Example usage:
-subreddit = "python"
-print("Subscribers in r/python:", number_of_subscribers(subreddit))
-
-subreddit = "invalid_subreddit"
-print("Subscribers in invalid_subreddit:", number_of_subscribers(subreddit))
