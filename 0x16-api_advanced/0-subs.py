@@ -11,11 +11,11 @@ def number_of_subscribers(subreddit):
     }
     response = requests.get(url, headers=headers, allow_redirects=False)
 
-    # Insert this statement where you want to make the request
-subreddit = "python"
-print("Number of subscribers in r/python:", number_of_subscribers(subreddit))
-
     if response.status_code == 404:
         return 0
     results = response.json().get("data")
     return results.get("subscribers")
+
+# Insert this statement where you want to make the request
+subreddit = "python"
+print("Number of subscribers in r/python:", number_of_subscribers(subreddit))
