@@ -5,4 +5,4 @@ eval $("ssh-agent")
 
 ssh-add ~/.ssh/school
 
-ssh ubuntu@18.206.232.100
+ssh ubuntu@54.175.224.101
