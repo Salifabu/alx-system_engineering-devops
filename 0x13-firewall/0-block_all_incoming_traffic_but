@@ -3,7 +3,7 @@
 sudo ufw status
 
 # Enable ufw by running:
-suo ufw enable
+sudo ufw enable
 
 # Block all incoming traffic by running:
 sudo ufw default deny incomming
